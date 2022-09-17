@@ -446,8 +446,7 @@ body.locked {
 .our-work__header {
   background-color: #0E0E33;
   width: 100%;
-  height: 100vh;
-  padding-top: 150px;
+  padding: 50px 0;
   color: #FFFFFF;
   position: relative;
   text-align: center;
@@ -466,6 +465,13 @@ body.locked {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.our-work__item {
+  min-width: 200px;
 }
 
 .our-work__item span {
@@ -809,5 +815,11 @@ body.locked {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+  }
+
+  .our-work__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
